@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js"defer></script>
+</head>
+
+<body>
+    <!-- <title>Shopping Cart Example</title>
+    <h1>Shopping Cart</h1>
+  <ul id="cart-items"></ul>
+  <h2>Products</h2>
+  <ul id="product-list">
+    <li>
+      Product 1 <button onclick="addToCart('Product 1')">Add to Cart</button>
+    </li>
+    <li>
+      Product 2 <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </li>
+    <li>
+      Product 3 <button onclick="addToCart('Product 3')">Add to Cart</button>
+    </li>
+  </ul> -->
+
+
+  <title>Image Adjustments</title>
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .image-container img {
+      max-width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 0;
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+  </style>
+
+<h2>Image Adjustments</h2>
+<div class="image-container">
+    <img id="image1" src="./images/image1.jpg">
+    <img id="image2" src="./images/image2.jpg">
+    <img id="image3" src="./images/image3.jpg">
+</div>
+<div>
+    <label for="border-radius-range">Border Radius:</label>
+    <input type="range" id="border-radius-range" min="0" max="50" step="1">
+  </div>
+
+  <div>
+    <label for="opacity-range">Opacity:</label>
+    <input type="range" id="opacity-range" min="0" max="1" step="0.1">
+  </div>
+    
+</body>
+</html>
